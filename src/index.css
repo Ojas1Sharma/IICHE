@@ -1,13 +1,219 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#9897f0),
+    to(#fac7d5)
+  );
+  background-image: linear-gradient(#9897f0, #fac7d5);
+  font-family: poppins, sans-serif;
+  overflow-x: hidden;
 }
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  top: 0%;
+  position: absolute;
+  padding: 0 4rem;
+  height: 10vh;
+  z-index: 3;
+  width: 100%;
+}
+
+header .alpha {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .logo {
+  cursor: pointer;
+  margin-right: auto;
+  width: 2.5rem;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+header button {
+  padding: 9px 25px;
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  /* remove margin-left if we want button to be spaced like other objects */
+  margin-left: 20px;
+}
+
+header button :hover {
+  background: transparent;
+  /* border: 2px solid #fff;
+         */
+  outline: 2px solid #fff;
+  color: #fff;
+}
+
+header .logo_text {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+header .nav_links {
+  list-style: none;
+}
+
+header .nav_links li {
+  display: inline-block;
+  padding: 0% 20px;
+}
+
+header .nav_links li a {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .nav_links li a:hover {
+  color: #0088a9;
+}
+
+.firstPageWithImage {
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 4rem;
+  gap: 1rem;
+}
+
+.eventName {
+  font-size: 4rem;
+}
+
+.eventDescription {
+  font-size: 1.75rem;
+  z-index: 2;
+}
+
+.loginButton {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 460px;
+  width: 460px;
+  background-color: #57c39e88;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.firstPageWithImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.firstPage {
+  display: inline-block;
+  width: 50px;
+}
+
+.imageOfTanjiro {
+  height: 470px;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.temp {
+  font-size: 5rem;
+}
+
+.buttonTwo {
+  padding: 9px 25px;
+  background-color: white;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  /* remove margin-left if we want button to be spaced like other objects */
+}
+
+.buttonTwo :hover {
+  background: transparent;
+  /* border: 2px solid #fff;
+       */
+  outline: 2px solid #fff;
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
